@@ -13,7 +13,7 @@ h1 {
     height: 450px;
     background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 5% 5% 5% 5%;
+    border-radius: 5%;
 )
 
 /*----------------------------------
@@ -70,7 +70,7 @@ h1 {
     HOVER, TRANSLATE & TRANSFORM EFFECTS
 ---------------------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover{
-    background-image: url("./images/icons/icon_2.png");
+    background-image: url("./images/icons/icons_2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -105,7 +105,7 @@ h1 {
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image: url("./images/icons/icon_2.png")
+        background-image: url("./images/icons/icons_2.png")
     }
     50% {
         transform: translateY(300px);
