@@ -35,8 +35,9 @@ h1 {
     transition: transform .5s ease-in-out;
 }
 
-
-
+/*-----------------------------------------------
+    SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+-----------------------------------------------*/
 
 .squares:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,7 +49,7 @@ h1 {
 }
 
 /*----------------------------------------------------------------
-        INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+     INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 -----------------------------------------------------------------*/
 .squares:nth-child(1){
     background: #4240ff;
@@ -58,7 +59,7 @@ h1 {
     background: #ab3fdd;
 }
 
-.sqaures:nth-child(3){
+.squares:nth-child(3){
     background: #ae163e;
 }
 
@@ -75,10 +76,10 @@ h1 {
     animation-name: race;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
 
-.sqaures:nth-child(1):hover {
+.squares:nth-child(1):hover {
     background: #13b4ff;
 }
 .squares:nth-child(2):hover {
@@ -105,7 +106,9 @@ h1 {
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image: url("../images/icons/icon_1.png")
+        background-image: url("../images/icons/icons_2.png")
     }
-    50% {transform: translateY(300px);}
+    50% {
+        transform: translateY(300px);
+    }
 }
